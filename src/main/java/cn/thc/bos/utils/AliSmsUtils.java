@@ -110,7 +110,7 @@ public class AliSmsUtils {
 
     	for (int a = 0; a < 1; a++) {
     		String telephone = "18827639083";  
-        	String username = "王吉阳大帅哥合适的方法和宽松的大夫货";
+        	String username = "王吉阳大帅哥";
         	String randomCode = RandomStringUtils.randomNumeric(4);
         	
             //发短信

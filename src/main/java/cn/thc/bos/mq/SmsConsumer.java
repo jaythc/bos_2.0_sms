@@ -21,7 +21,7 @@ public class SmsConsumer implements MessageListener {
 		try {
 			//调用阿里大于的工具类, 发送短信, 从生产者中获取电话号码和验证码
 			SendSmsResponse response = AliSmsUtils.sendSms(mapMessage.getString("telephone"),null, 
-					 mapMessage.getString("randomCode"));
+					 mapMessage.getString("msg"));
 			if (response.getCode()!=null&& response.getCode().equals("OK")) {
 				System.err.println("短信发送成功!");
 			}
